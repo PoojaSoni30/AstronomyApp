@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		B53273CB281664D200FC10B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273CA281664D200FC10B0 /* AppDelegate.swift */; };
 		B53273CD281664D200FC10B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273CC281664D200FC10B0 /* SceneDelegate.swift */; };
-		B53273CF281664D200FC10B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273CE281664D200FC10B0 /* ViewController.swift */; };
-		B53273D2281664D200FC10B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53273D0281664D200FC10B0 /* Main.storyboard */; };
 		B53273D4281664D400FC10B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53273D3281664D400FC10B0 /* Assets.xcassets */; };
 		B53273D7281664D400FC10B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53273D5281664D400FC10B0 /* LaunchScreen.storyboard */; };
+		B53273E6281665C300FC10B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53273E1281665C300FC10B0 /* Main.storyboard */; };
+		B53273E7281665C300FC10B0 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273E3281665C300FC10B0 /* ToastMessage.swift */; };
+		B53273E8281665C300FC10B0 /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273E4281665C300FC10B0 /* AstronomyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B53273C7281664D200FC10B0 /* WalE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53273CA281664D200FC10B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53273CC281664D200FC10B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B53273CE281664D200FC10B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B53273D1281664D200FC10B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53273D3281664D400FC10B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53273D6281664D400FC10B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53273D8281664D400FC10B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53273E2281665C300FC10B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53273E3281665C300FC10B0 /* ToastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		B53273E4281665C300FC10B0 /* AstronomyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		B53273C9281664D200FC10B0 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
+				B53273DF281665C300FC10B0 /* View */,
 				B53273CA281664D200FC10B0 /* AppDelegate.swift */,
 				B53273CC281664D200FC10B0 /* SceneDelegate.swift */,
-				B53273CE281664D200FC10B0 /* ViewController.swift */,
-				B53273D0281664D200FC10B0 /* Main.storyboard */,
 				B53273D3281664D400FC10B0 /* Assets.xcassets */,
 				B53273D5281664D400FC10B0 /* LaunchScreen.storyboard */,
 				B53273D8281664D400FC10B0 /* Info.plist */,
 			);
 			path = WalE;
+			sourceTree = "<group>";
+		};
+		B53273DF281665C300FC10B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B53273E1281665C300FC10B0 /* Main.storyboard */,
+				B53273E3281665C300FC10B0 /* ToastMessage.swift */,
+				B53273E4281665C300FC10B0 /* AstronomyViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,7 @@
 			files = (
 				B53273D7281664D400FC10B0 /* LaunchScreen.storyboard in Resources */,
 				B53273D4281664D400FC10B0 /* Assets.xcassets in Resources */,
-				B53273D2281664D200FC10B0 /* Main.storyboard in Resources */,
+				B53273E6281665C300FC10B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53273CF281664D200FC10B0 /* ViewController.swift in Sources */,
+				B53273E8281665C300FC10B0 /* AstronomyViewController.swift in Sources */,
+				B53273E7281665C300FC10B0 /* ToastMessage.swift in Sources */,
 				B53273CB281664D200FC10B0 /* AppDelegate.swift in Sources */,
 				B53273CD281664D200FC10B0 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,20 +158,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B53273D0281664D200FC10B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B53273D1281664D200FC10B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B53273D5281664D400FC10B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B53273D6281664D400FC10B0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B53273E1281665C300FC10B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53273E2281665C300FC10B0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
