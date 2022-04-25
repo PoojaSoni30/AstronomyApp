@@ -72,7 +72,7 @@ class AstronomyViewModel {
         let queue = DispatchQueue(label: "Network")
         monitor.start(queue: queue)
     }
-    //to check whether the user is entering for the first time a day 
+    //to check whether the user is entering for the first time a day
     func isUserEnteredFirstTimeForTheDay() -> Bool {
         var isFirstTimeUser: Bool = false
         if let currentDate = defaults.object(forKey: "currentDate") as? Date {
