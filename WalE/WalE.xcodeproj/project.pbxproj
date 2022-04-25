@@ -15,6 +15,10 @@
 		B53273E7281665C300FC10B0 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273E3281665C300FC10B0 /* ToastMessage.swift */; };
 		B53273E8281665C300FC10B0 /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273E4281665C300FC10B0 /* AstronomyViewController.swift */; };
 		B53273EF2816672100FC10B0 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273EE2816672100FC10B0 /* Astronomy.swift */; };
+		B53273FD2816692900FC10B0 /* AstronomyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273FC2816692900FC10B0 /* AstronomyVM.swift */; };
+		B5327401281669BD00FC10B0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5327400281669BD00FC10B0 /* NetworkService.swift */; };
+		B5327406281669F400FC10B0 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5327404281669F400FC10B0 /* NetworkHandler.swift */; };
+		B5327407281669F400FC10B0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5327405281669F400FC10B0 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		B53273E3281665C300FC10B0 /* ToastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
 		B53273E4281665C300FC10B0 /* AstronomyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
 		B53273EE2816672100FC10B0 /* Astronomy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
+		B53273FC2816692900FC10B0 /* AstronomyVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyVM.swift; sourceTree = "<group>"; };
+		B5327400281669BD00FC10B0 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B5327404281669F400FC10B0 /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		B5327405281669F400FC10B0 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 		B53273C9281664D200FC10B0 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
+				B53273FF281669A200FC10B0 /* Network */,
+				B53273FB2816692900FC10B0 /* ViewModel */,
 				B53273ED2816672100FC10B0 /* Model */,
 				B53273DF281665C300FC10B0 /* View */,
 				B53273CA281664D200FC10B0 /* AppDelegate.swift */,
@@ -87,6 +97,32 @@
 				B53273EE2816672100FC10B0 /* Astronomy.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B53273FB2816692900FC10B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B53273FC2816692900FC10B0 /* AstronomyVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B53273FF281669A200FC10B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5327403281669F400FC10B0 /* HelperModel */,
+				B5327400281669BD00FC10B0 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B5327403281669F400FC10B0 /* HelperModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5327404281669F400FC10B0 /* NetworkHandler.swift */,
+				B5327405281669F400FC10B0 /* Endpoint.swift */,
+			);
+			path = HelperModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53273E8281665C300FC10B0 /* AstronomyViewController.swift in Sources */,
+				B5327407281669F400FC10B0 /* Endpoint.swift in Sources */,
+				B53273FD2816692900FC10B0 /* AstronomyVM.swift in Sources */,
 				B53273E7281665C300FC10B0 /* ToastMessage.swift in Sources */,
 				B53273EF2816672100FC10B0 /* Astronomy.swift in Sources */,
 				B53273CB281664D200FC10B0 /* AppDelegate.swift in Sources */,
 				B53273CD281664D200FC10B0 /* SceneDelegate.swift in Sources */,
+				B5327401281669BD00FC10B0 /* NetworkService.swift in Sources */,
+				B5327406281669F400FC10B0 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
