@@ -14,6 +14,7 @@
 		B53273E6281665C300FC10B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53273E1281665C300FC10B0 /* Main.storyboard */; };
 		B53273E7281665C300FC10B0 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273E3281665C300FC10B0 /* ToastMessage.swift */; };
 		B53273E8281665C300FC10B0 /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273E4281665C300FC10B0 /* AstronomyViewController.swift */; };
+		B53273EF2816672100FC10B0 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53273EE2816672100FC10B0 /* Astronomy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B53273E2281665C300FC10B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53273E3281665C300FC10B0 /* ToastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
 		B53273E4281665C300FC10B0 /* AstronomyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
+		B53273EE2816672100FC10B0 /* Astronomy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		B53273C9281664D200FC10B0 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
+				B53273ED2816672100FC10B0 /* Model */,
 				B53273DF281665C300FC10B0 /* View */,
 				B53273CA281664D200FC10B0 /* AppDelegate.swift */,
 				B53273CC281664D200FC10B0 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				B53273E4281665C300FC10B0 /* AstronomyViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B53273ED2816672100FC10B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B53273EE2816672100FC10B0 /* Astronomy.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				B53273E8281665C300FC10B0 /* AstronomyViewController.swift in Sources */,
 				B53273E7281665C300FC10B0 /* ToastMessage.swift in Sources */,
+				B53273EF2816672100FC10B0 /* Astronomy.swift in Sources */,
 				B53273CB281664D200FC10B0 /* AppDelegate.swift in Sources */,
 				B53273CD281664D200FC10B0 /* SceneDelegate.swift in Sources */,
 			);
